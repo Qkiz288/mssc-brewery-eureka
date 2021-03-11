@@ -13,12 +13,4 @@ public class MsscBreweryEurekaApplication {
     public static void main(String[] args) {
         SpringApplication.run(MsscBreweryEurekaApplication.class, args);
     }
-
-    @EnableWebSecurity
-    static class WebSecurityConfig extends WebSecurityConfigurerAdapter {
-        @Override
-        protected void configure(HttpSecurity http) throws Exception {
-            http.csrf().disable();
-        }
-    }
 }
